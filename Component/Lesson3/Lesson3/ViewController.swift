@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         setupLabel()
         setupSecondLabel()
         setupButtonClick()
-        
+        setupSecondButton()
     }
     
     func setupLabel() {
@@ -65,7 +65,21 @@ class ViewController: UIViewController {
     }
     
     func setupSecondButton() {
+        view.addSubview(btSecond)
+        let x = btClick.frame.origin.x
+        let y = btClick.frame.origin.y + btClick.frame.height + 20
+        let w = btClick.frame.width
+        let h = btClick.frame.height
+        btSecond.frame = CGRect(x: x, y: y, width: w, height: h)
+        btSecond.setTitle("Register", for: .normal)
+        btSecond.backgroundColor = .brown
+        btSecond.layer.cornerRadius = 8
         
+        btSecond.addTarget(self, action: #selector(tapOnRegister), for: .touchUpInside)
+    }
+    
+    @objc func tapOnRegister() {
+        print("Thanks for resgister")
     }
 }
 
