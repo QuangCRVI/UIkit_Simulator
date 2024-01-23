@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btClick: UIButton!
     @IBOutlet weak var tfEnter: UITextField!
     @IBOutlet weak var tvNews: UITextView!
+    @IBOutlet weak var imgLogo: UIImageView!
     
     // create label = code
     var lbSecond = UILabel()
@@ -33,6 +34,7 @@ class ViewController: UIViewController {
         setupSecondTextField()
         setupTextView()
         setupSecondTextView()
+        setupImageLogo()
     }
     
     func setupLabel() {
@@ -66,13 +68,9 @@ class ViewController: UIViewController {
     }
         
     @IBAction func tapOnClick(_ sender: Any) {
-        print("Thank you for tapping")
-        btClick.isSelected = !btClick.isSelected
-        if btClick.isSelected == true {
-            btClick.backgroundColor = .blue
-        } else {
-            btClick.backgroundColor = .red
-        }
+        btClick.isSelected == true ? UIColor.white : UIColor.red
+        let sliderVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sliderView")
+        navigationController?.pushViewController(sliderVC, animated: true)
     }
     
     func setupSecondButton() {
@@ -105,7 +103,7 @@ class ViewController: UIViewController {
     
     func setupSecondTextField() {
         let x = tfEnter.frame.origin.x + 50
-        let y = tfEnter.frame.origin.y + tfEnter.frame.height + 20
+        let y = tfEnter.frame.origin.y + tfEnter.frame.height + 10
         let w = tfEnter.frame.width
         let h = tfEnter.frame.height
         tfSecond.frame = CGRect(x: x, y: y, width: w, height: h)
@@ -133,11 +131,29 @@ class ViewController: UIViewController {
         tvSecond.text = "This is a second textview"
         tvSecond.backgroundColor = .orange
         tvSecond.textColor = .white
-        tvSecond.isSelectable = false
+        tvSecond.isSelectable = true
+        tvSecond.isEditable = true
+        
+        tvSecond.delegate = self
     }
+    
+    func setupImageLogo() {
+        // Lay anh tu Local
+        imgLogo.image = UIImage(named: "ic_logoReal")
+        imgLogo.layer.cornerRadius = 1
+        imgLogo.layer.masksToBounds = true
+        
+        // Lay anh tren Internet tra ve
+        if let url = URL(string: "https://cdn.oneesports.vn/cdn-data/sites/4/2023/09/FO4-ICON-TM-1024x576.jpg") {
+            let data = try! Data(contentsOf: url)
+            imgLogo.image = UIImage(data: data)
+        }
+        
+    }
+    
 }
 
-extension ViewController: UITextFieldDelegate {
+extension ViewController: UITextFieldDelegate, UITextViewDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
 //        let message = textField == tfEnter ? "Open Contact": "Open Calender"
 //        print(message)
@@ -161,4 +177,22 @@ extension ViewController: UITextFieldDelegate {
             print(tfEnter.text!)
         }
     }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        print(textView.text!)
+    }
+    
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        print("Tap on text view second")
+        return true
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        print("You start editting")
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        print("You end editting")
+    }
+    
 }

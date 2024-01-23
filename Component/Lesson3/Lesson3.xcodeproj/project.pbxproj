@@ -16,6 +16,7 @@
 		E3C3B7E32B5E6936007E50ED /* Lesson3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C3B7E22B5E6936007E50ED /* Lesson3Tests.swift */; };
 		E3C3B7ED2B5E6936007E50ED /* Lesson3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C3B7EC2B5E6936007E50ED /* Lesson3UITests.swift */; };
 		E3C3B7EF2B5E6936007E50ED /* Lesson3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C3B7EE2B5E6936007E50ED /* Lesson3UITestsLaunchTests.swift */; };
+		E3D920FB2B5F931400ED1981 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D920FA2B5F931400ED1981 /* SliderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E3C3B7E82B5E6936007E50ED /* Lesson3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C3B7EC2B5E6936007E50ED /* Lesson3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson3UITests.swift; sourceTree = "<group>"; };
 		E3C3B7EE2B5E6936007E50ED /* Lesson3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson3UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E3D920FA2B5F931400ED1981 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				E3C3B7CB2B5E6935007E50ED /* AppDelegate.swift */,
 				E3C3B7CD2B5E6935007E50ED /* SceneDelegate.swift */,
 				E3C3B7CF2B5E6935007E50ED /* ViewController.swift */,
+				E3D920FA2B5F931400ED1981 /* SliderViewController.swift */,
 				E3C3B7D12B5E6935007E50ED /* Main.storyboard */,
 				E3C3B7D42B5E6936007E50ED /* Assets.xcassets */,
 				E3C3B7D62B5E6936007E50ED /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				E3C3B7D02B5E6935007E50ED /* ViewController.swift in Sources */,
 				E3C3B7CC2B5E6935007E50ED /* AppDelegate.swift in Sources */,
 				E3C3B7CE2B5E6935007E50ED /* SceneDelegate.swift in Sources */,
+				E3D920FB2B5F931400ED1981 /* SliderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
