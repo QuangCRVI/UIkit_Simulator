@@ -109,6 +109,10 @@
                                     <action selector="moveView:" destination="Ztu-HI-Eey" eventType="touchUpInside" id="yC9-lQ-RuL"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XTH-dS-wKH">
+                                <rect key="frame" x="0.0" y="388" width="393" height="124"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Kf-Yo-aLD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -116,6 +120,7 @@
                     <connections>
                         <outlet property="aivLoading" destination="8E9-r0-Dkr" id="FI8-4I-bUP"/>
                         <outlet property="lbResult" destination="9lZ-2J-lDK" id="9xI-cr-8Cw"/>
+                        <outlet property="pickerView" destination="XTH-dS-wKH" id="epc-Q9-tuX"/>
                         <outlet property="progressView" destination="bof-x0-yxP" id="VpP-br-MtW"/>
                         <outlet property="segmentControl" destination="ybl-xR-nDZ" id="Dnx-g4-slf"/>
                     </connections>
