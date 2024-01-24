@@ -1,24 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Exercise5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUt-v2-QkT">
+                                <rect key="frame" x="40" y="178" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose Gender" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fug-BQ-7Mx">
+                                <rect key="frame" x="40" y="237" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgX-9c-Fuf">
+                                <rect key="frame" x="136.66666666666666" y="301" width="119.99999999999997" height="35"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="uwk-Oy-C22"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Register">
+                                    <color key="baseForegroundColor" systemColor="systemGray5Color"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapOnRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVb-YC-NU3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LBq-AA-N4C">
+                                <rect key="frame" x="40" y="119" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RiN-9k-8lx">
+                                <rect key="frame" x="0.0" y="391" width="393" height="162"/>
+                            </pickerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LBq-AA-N4C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="08c-IB-vuK"/>
+                            <constraint firstItem="RiN-9k-8lx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.190141" id="4Nz-jc-xI1"/>
+                            <constraint firstItem="RiN-9k-8lx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6zj-75-12b"/>
+                            <constraint firstItem="RgX-9c-Fuf" firstAttribute="top" secondItem="Fug-BQ-7Mx" secondAttribute="bottom" constant="30" id="CTO-4t-72B"/>
+                            <constraint firstItem="Fug-BQ-7Mx" firstAttribute="leading" secondItem="EUt-v2-QkT" secondAttribute="leading" id="JIp-R0-cxx"/>
+                            <constraint firstItem="EUt-v2-QkT" firstAttribute="trailing" secondItem="LBq-AA-N4C" secondAttribute="trailing" id="Tbc-Tz-IW6"/>
+                            <constraint firstItem="LBq-AA-N4C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="ZZK-NU-saF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LBq-AA-N4C" secondAttribute="trailing" constant="40" id="cXW-ou-sXe"/>
+                            <constraint firstItem="EUt-v2-QkT" firstAttribute="leading" secondItem="LBq-AA-N4C" secondAttribute="leading" id="ii4-Wy-C7y"/>
+                            <constraint firstItem="Fug-BQ-7Mx" firstAttribute="top" secondItem="EUt-v2-QkT" secondAttribute="bottom" constant="25" id="qTJ-KS-KbI"/>
+                            <constraint firstItem="Fug-BQ-7Mx" firstAttribute="trailing" secondItem="EUt-v2-QkT" secondAttribute="trailing" id="rzE-eT-U45"/>
+                            <constraint firstItem="RiN-9k-8lx" firstAttribute="top" secondItem="RgX-9c-Fuf" secondAttribute="bottom" constant="55" id="sZC-Xu-SNx"/>
+                            <constraint firstItem="RiN-9k-8lx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="x3G-cu-Jlr"/>
+                            <constraint firstItem="RgX-9c-Fuf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xjo-nh-GeX"/>
+                            <constraint firstItem="EUt-v2-QkT" firstAttribute="top" secondItem="LBq-AA-N4C" secondAttribute="bottom" constant="25" id="zZQ-jS-fFw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="RiN-9k-8lx" id="C6g-rW-ZtS"/>
+                        <outlet property="tfAge" destination="EUt-v2-QkT" id="auK-3R-3Yk"/>
+                        <outlet property="tfGender" destination="Fug-BQ-7Mx" id="1Mx-Xl-CZb"/>
+                        <outlet property="tfName" destination="LBq-AA-N4C" id="Kan-RN-ObA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
