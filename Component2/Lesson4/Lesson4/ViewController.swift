@@ -88,7 +88,7 @@ class ViewController: UIViewController {
     
     @IBAction func changeView(_ sender: Any) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "vcB")
-                navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

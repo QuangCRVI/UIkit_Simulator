@@ -90,18 +90,74 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bof-x0-yxP">
+                                <rect key="frame" x="48" y="327" width="296" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="8E9-r0-Dkr">
+                                <rect key="frame" x="186" y="352" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEk-HN-GNx">
+                                <rect key="frame" x="158" y="701" width="77" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Move">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="moveView:" destination="Ztu-HI-Eey" eventType="touchUpInside" id="yC9-lQ-RuL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Kf-Yo-aLD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="aivLoading" destination="8E9-r0-Dkr" id="FI8-4I-bUP"/>
                         <outlet property="lbResult" destination="9lZ-2J-lDK" id="9xI-cr-8Cw"/>
+                        <outlet property="progressView" destination="bof-x0-yxP" id="VpP-br-MtW"/>
                         <outlet property="segmentControl" destination="ybl-xR-nDZ" id="Dnx-g4-slf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ckr-9v-DOu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1857.2519083969464" y="-27.464788732394368"/>
+        </scene>
+        <!--WebVC-->
+        <scene sceneID="bJQ-pH-9X2">
+            <objects>
+                <viewController storyboardIdentifier="webVC" id="0jh-32-Ehi" customClass="WebVC" customModule="Lesson4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2eY-Pc-45z">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jqk-hl-yhk">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A9p-fo-jwN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jqk-hl-yhk" firstAttribute="top" secondItem="A9p-fo-jwN" secondAttribute="top" id="Vrk-y7-Enl"/>
+                            <constraint firstItem="Jqk-hl-yhk" firstAttribute="trailing" secondItem="A9p-fo-jwN" secondAttribute="trailing" id="Yv3-3z-3jn"/>
+                            <constraint firstItem="Jqk-hl-yhk" firstAttribute="leading" secondItem="A9p-fo-jwN" secondAttribute="leading" id="aq0-Ci-Mg2"/>
+                            <constraint firstItem="Jqk-hl-yhk" firstAttribute="bottom" secondItem="A9p-fo-jwN" secondAttribute="bottom" id="wYh-6i-3IF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5cE-bI-Axt"/>
+                    <connections>
+                        <outlet property="webView" destination="Jqk-hl-yhk" id="cXj-DO-L9d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="436-us-Nca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2681.679389312977" y="-27.464788732394368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="adH-9u-1MJ">

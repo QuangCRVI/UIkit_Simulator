@@ -17,6 +17,7 @@
 		E3D9212A2B5FA89A00ED1981 /* Lesson4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D921292B5FA89A00ED1981 /* Lesson4UITests.swift */; };
 		E3D9212C2B5FA89A00ED1981 /* Lesson4UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D9212B2B5FA89A00ED1981 /* Lesson4UITestsLaunchTests.swift */; };
 		E3D9213B2B5FC44100ED1981 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D9213A2B5FC44100ED1981 /* SecondVC.swift */; };
+		E3D9213D2B60B07B00ED1981 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D9213C2B60B07B00ED1981 /* WebVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E3D921292B5FA89A00ED1981 /* Lesson4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson4UITests.swift; sourceTree = "<group>"; };
 		E3D9212B2B5FA89A00ED1981 /* Lesson4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson4UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E3D9213A2B5FC44100ED1981 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		E3D9213C2B60B07B00ED1981 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				E3D9210A2B5FA89900ED1981 /* SceneDelegate.swift */,
 				E3D9210C2B5FA89900ED1981 /* ViewController.swift */,
 				E3D9213A2B5FC44100ED1981 /* SecondVC.swift */,
+				E3D9213C2B60B07B00ED1981 /* WebVC.swift */,
 				E3D9210E2B5FA89900ED1981 /* Main.storyboard */,
 				E3D921112B5FA89900ED1981 /* Assets.xcassets */,
 				E3D921132B5FA89900ED1981 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			files = (
 				E3D9210D2B5FA89900ED1981 /* ViewController.swift in Sources */,
 				E3D921092B5FA89900ED1981 /* AppDelegate.swift in Sources */,
+				E3D9213D2B60B07B00ED1981 /* WebVC.swift in Sources */,
 				E3D9213B2B5FC44100ED1981 /* SecondVC.swift in Sources */,
 				E3D9210B2B5FA89900ED1981 /* SceneDelegate.swift in Sources */,
 			);
