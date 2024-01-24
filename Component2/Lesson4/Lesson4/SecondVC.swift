@@ -11,6 +11,15 @@ class SecondVC: UIViewController {
 
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var lbResult: UILabel!
+    @IBOutlet weak var aivLoading: UIActivityIndicatorView!
+    @IBOutlet weak var progressView: UIProgressView!
+   
+    // Create time for progress view
+    var timer = Timer()
+    
+    // Change color of selected segment
+    let titleTextAttributesChange = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
     
     // Create segment = code
     var segmentedSecond = UISegmentedControl()
@@ -20,6 +29,8 @@ class SecondVC: UIViewController {
         // Do any additional setup after loading the view.
         setupSegmentdControl()
         setupSegmentedSecond()
+        setupProgressView()
+        setupLoading()
     }
     
     func setupSegmentdControl() {
@@ -28,8 +39,6 @@ class SecondVC: UIViewController {
         lbResult.text = "Third"
         
         // Change color of selected segment
-        let titleTextAttributesChange = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         segmentControl.setTitleTextAttributes(titleTextAttributesChange, for: .selected)
         segmentControl.setTitleTextAttributes(titleTextAttributes, for: .normal)
     }
@@ -61,8 +70,6 @@ class SecondVC: UIViewController {
         segmentedSecond.tintColor = .black
         
         // Change color of selected segment
-        let titleTextAttributesChange = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         segmentedSecond.setTitleTextAttributes(titleTextAttributesChange, for: .selected)
         segmentedSecond.setTitleTextAttributes(titleTextAttributes, for: .normal)
         
@@ -77,5 +84,31 @@ class SecondVC: UIViewController {
         }else {
             lbResult.text = "macbook tab"
         }
+    }
+    
+    func setupLoading() {
+        aivLoading.hidesWhenStopped = true
+        aivLoading.color = .orange
+    }
+    
+    func setupProgressView() {
+        progressView.progressTintColor = .link
+        progressView.trackTintColor = .systemGroupedBackground
+        progressView.progress = 0.01
+        
+        timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(runProgress), userInfo: nil, repeats: true)
+    }
+    
+    @objc func runProgress() {
+        progressView.progress += 0.01
+        if Double(progressView.progress) == timer.timeInterval {
+            aivLoading.stopAnimating()
+            aivLoading.isHidden = true
+        }
+    }
+       
+    @IBAction func moveView(_ sender: Any) {
+        let vc  = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "webVC")
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
