@@ -16,6 +16,8 @@
 		E309E95D2B60E35500B675A6 /* Lesson5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E309E95C2B60E35500B675A6 /* Lesson5Tests.swift */; };
 		E309E9672B60E35600B675A6 /* Lesson5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E309E9662B60E35600B675A6 /* Lesson5UITests.swift */; };
 		E309E9692B60E35600B675A6 /* Lesson5UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E309E9682B60E35600B675A6 /* Lesson5UITestsLaunchTests.swift */; };
+		E337DDE92B60F49D00B8EF0E /* AutoLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E337DDE82B60F49D00B8EF0E /* AutoLayoutVC.swift */; };
+		E337DDEB2B60FE0700B8EF0E /* ScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E337DDEA2B60FE0700B8EF0E /* ScrollVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E309E9622B60E35600B675A6 /* Lesson5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E309E9662B60E35600B675A6 /* Lesson5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson5UITests.swift; sourceTree = "<group>"; };
 		E309E9682B60E35600B675A6 /* Lesson5UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson5UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E337DDE82B60F49D00B8EF0E /* AutoLayoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutVC.swift; sourceTree = "<group>"; };
+		E337DDEA2B60FE0700B8EF0E /* ScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				E309E9452B60E35500B675A6 /* AppDelegate.swift */,
 				E309E9472B60E35500B675A6 /* SceneDelegate.swift */,
 				E309E9492B60E35500B675A6 /* ViewController.swift */,
+				E337DDE82B60F49D00B8EF0E /* AutoLayoutVC.swift */,
+				E337DDEA2B60FE0700B8EF0E /* ScrollVC.swift */,
 				E309E94B2B60E35500B675A6 /* Main.storyboard */,
 				E309E94E2B60E35500B675A6 /* Assets.xcassets */,
 				E309E9502B60E35500B675A6 /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E309E94A2B60E35500B675A6 /* ViewController.swift in Sources */,
+				E337DDE92B60F49D00B8EF0E /* AutoLayoutVC.swift in Sources */,
 				E309E9462B60E35500B675A6 /* AppDelegate.swift in Sources */,
+				E337DDEB2B60FE0700B8EF0E /* ScrollVC.swift in Sources */,
 				E309E9482B60E35500B675A6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
