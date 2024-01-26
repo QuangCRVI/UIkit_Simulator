@@ -13,7 +13,7 @@ class Screen3: UIViewController {
     @IBOutlet weak var lbAge: UILabel!
     @IBOutlet weak var lbName: UILabel!
     
-    var person = Human()
+    var person = Person()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +22,8 @@ class Screen3: UIViewController {
     }
 
     func setupView() {
-        lbName.text = "My name is "
-        lbAge.text = "I'm  years old"
-        lbJob.text = "I'm "
+            lbName.text = "My name is \(person.name)"
+            lbAge.text = "I'm \(person.age) years old"
+            lbJob.text = "I'm \(person.job)"
     }
 }

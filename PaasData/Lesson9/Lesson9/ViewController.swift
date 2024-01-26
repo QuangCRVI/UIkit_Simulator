@@ -51,11 +51,16 @@ class ViewController: UIViewController {
         }
         
         let vc = Screen3(nibName: "Screen3", bundle: nil)
-        let person = Human(name: tfName.text!, age: tfAge.text!, job: tfJob.text!)
+        let person = Person(name: tfName.text!, age: tfAge.text!, job: tfJob.text!)
         vc.person = person
         //vc.modalPresentationStyle = .fullScreen
         //present(vc, animated: true)
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    
 }
 
+// Các cách Pass Data
+// 1. Sử dụng Instance
+// 2. Sử dụng Design Pattern Singleton -> Chỉ lưu trong Session

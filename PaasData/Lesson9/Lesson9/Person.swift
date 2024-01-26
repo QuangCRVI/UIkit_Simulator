@@ -7,26 +7,9 @@
 
 import Foundation
 
-class Person {
+struct Person {
     var name = ""
     var age = ""
     var job = ""
-    
-    init(name: String = "", age: String = "", job: String = "") {
-        self.name = name
-        self.age = age
-        self.job = job
-    }
-}
 
-struct Human {
-    var name = ""
-    var age = ""
-    var job = ""
-    
-//    init(name: String = "", age: String = "", job: String = "") {
-//        self.name = name
-//        self.age = age
-//        self.job = job
-//    }
 }
