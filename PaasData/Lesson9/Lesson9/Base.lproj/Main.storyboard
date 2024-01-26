@@ -58,7 +58,6 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="tapOnMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ST-sH-sbH"/>
                                     <action selector="tapOnScreen3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mju-Fd-hmx"/>
                                 </connections>
                             </button>
