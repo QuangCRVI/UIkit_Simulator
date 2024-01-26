@@ -25,8 +25,8 @@
 		E3C8DD9E2B63BD0D0066E3F6 /* Screen5.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3C8DD9C2B63BD0D0066E3F6 /* Screen5.xib */; };
 		E3C8DDA12B63BEF90066E3F6 /* AddNewUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8DD9F2B63BEF90066E3F6 /* AddNewUserVC.swift */; };
 		E3C8DDA22B63BEF90066E3F6 /* AddNewUserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3C8DDA02B63BEF90066E3F6 /* AddNewUserVC.xib */; };
-		E3C8DDA52B63C35F0066E3F6 /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8DDA32B63C35F0066E3F6 /* StudentCell.swift */; };
-		E3C8DDA62B63C35F0066E3F6 /* StudentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3C8DDA42B63C35F0066E3F6 /* StudentCell.xib */; };
+		E3C8DDA92B63C4620066E3F6 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C8DDA72B63C4620066E3F6 /* UserCell.swift */; };
+		E3C8DDAA2B63C4620066E3F6 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3C8DDA82B63C4620066E3F6 /* UserCell.xib */; };
 		E3EC78FC2B638FFE002C85BB /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EC78FB2B638FFE002C85BB /* SessionData.swift */; };
 		E3EC78FF2B639583002C85BB /* Screen4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EC78FD2B639583002C85BB /* Screen4.swift */; };
 		E3EC79002B639583002C85BB /* Screen4.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3EC78FE2B639583002C85BB /* Screen4.xib */; };
@@ -72,8 +72,8 @@
 		E3C8DD9C2B63BD0D0066E3F6 /* Screen5.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Screen5.xib; sourceTree = "<group>"; };
 		E3C8DD9F2B63BEF90066E3F6 /* AddNewUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewUserVC.swift; sourceTree = "<group>"; };
 		E3C8DDA02B63BEF90066E3F6 /* AddNewUserVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewUserVC.xib; sourceTree = "<group>"; };
-		E3C8DDA32B63C35F0066E3F6 /* StudentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
-		E3C8DDA42B63C35F0066E3F6 /* StudentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentCell.xib; sourceTree = "<group>"; };
+		E3C8DDA72B63C4620066E3F6 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		E3C8DDA82B63C4620066E3F6 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		E3EC78FB2B638FFE002C85BB /* SessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionData.swift; sourceTree = "<group>"; };
 		E3EC78FD2B639583002C85BB /* Screen4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4.swift; sourceTree = "<group>"; };
 		E3EC78FE2B639583002C85BB /* Screen4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Screen4.xib; sourceTree = "<group>"; };
@@ -140,8 +140,8 @@
 				E3C8DD9C2B63BD0D0066E3F6 /* Screen5.xib */,
 				E3C8DD9F2B63BEF90066E3F6 /* AddNewUserVC.swift */,
 				E3C8DDA02B63BEF90066E3F6 /* AddNewUserVC.xib */,
-				E3C8DDA32B63C35F0066E3F6 /* StudentCell.swift */,
-				E3C8DDA42B63C35F0066E3F6 /* StudentCell.xib */,
+				E3C8DDA72B63C4620066E3F6 /* UserCell.swift */,
+				E3C8DDA82B63C4620066E3F6 /* UserCell.xib */,
 				E37036F82B636D8400491DF3 /* Person.swift */,
 				E3EC78FB2B638FFE002C85BB /* SessionData.swift */,
 				E3C8DD992B63B03F0066E3F6 /* Constant.swift */,
@@ -277,10 +277,10 @@
 				E3C8DD9E2B63BD0D0066E3F6 /* Screen5.xib in Resources */,
 				E37036CC2B6352E300491DF3 /* Assets.xcassets in Resources */,
 				E37036CA2B6352E200491DF3 /* Main.storyboard in Resources */,
+				E3C8DDAA2B63C4620066E3F6 /* UserCell.xib in Resources */,
 				E37036F72B63610200491DF3 /* Screen3.xib in Resources */,
 				E3C8DDA22B63BEF90066E3F6 /* AddNewUserVC.xib in Resources */,
 				E3EC79002B639583002C85BB /* Screen4.xib in Resources */,
-				E3C8DDA62B63C35F0066E3F6 /* StudentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,12 +308,12 @@
 				E37036F92B636D8400491DF3 /* Person.swift in Sources */,
 				E3C8DDA12B63BEF90066E3F6 /* AddNewUserVC.swift in Sources */,
 				E3C8DD9D2B63BD0D0066E3F6 /* Screen5.swift in Sources */,
-				E3C8DDA52B63C35F0066E3F6 /* StudentCell.swift in Sources */,
 				E37036C72B6352E200491DF3 /* ViewController.swift in Sources */,
 				E3C8DD9A2B63B03F0066E3F6 /* Constant.swift in Sources */,
 				E3EC78FC2B638FFE002C85BB /* SessionData.swift in Sources */,
 				E37036F62B63610200491DF3 /* Screen3.swift in Sources */,
 				E3EC78FF2B639583002C85BB /* Screen4.swift in Sources */,
+				E3C8DDA92B63C4620066E3F6 /* UserCell.swift in Sources */,
 				E37036C32B6352E200491DF3 /* AppDelegate.swift in Sources */,
 				E37036F32B63570600491DF3 /* Screen2.swift in Sources */,
 				E37036C52B6352E200491DF3 /* SceneDelegate.swift in Sources */,

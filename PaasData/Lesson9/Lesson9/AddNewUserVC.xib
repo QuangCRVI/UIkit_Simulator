@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNewUserVC" customModule="Lesson9" customModuleProvider="target">
             <connections>
+                <outlet property="tfAge" destination="msf-n2-UnH" id="9Bw-jk-4c1"/>
+                <outlet property="tfName" destination="8gu-uq-hVu" id="wa1-ig-PfK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -42,6 +44,9 @@
                         <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="tapOnAddUser:" destination="-1" eventType="touchUpInside" id="Ezq-VA-Tmt"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
