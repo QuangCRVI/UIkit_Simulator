@@ -7,14 +7,9 @@
 
 import Foundation
 
-class SessionData {
-    static let share = SessionData()
-    
-    var personData: Person?
-}
 
 struct Data {
-    static let share = Data()
+    static var share = Data() // Cách tạo ra Design Pattern Singleton
     
-    var personData: Person?
+    var personData: Person? // Data User
 }

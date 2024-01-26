@@ -46,7 +46,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="tapOnScreen3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mju-Fd-hmx"/>
+                                    <action selector="tapOnScreen3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pvf-Kg-VhG"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Company" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YGs-hr-eRE">
@@ -66,10 +66,36 @@
                                     <action selector="tapOnMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JWH-gy-oF1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxF-4L-qsF">
+                                <rect key="frame" x="80" y="600.33333333333337" width="233" height="38"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go To Screen 4">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapOnScreen4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BqO-51-Enr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="is6-lf-Lhg">
+                                <rect key="frame" x="80" y="663.33333333333337" width="233" height="38"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go To Screen 5">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapOnScreen5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6PU-9k-qZm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="GxF-4L-qsF" firstAttribute="top" secondItem="u2L-B2-FU0" secondAttribute="bottom" constant="25" id="09b-la-07t"/>
+                            <constraint firstItem="is6-lf-Lhg" firstAttribute="trailing" secondItem="GxF-4L-qsF" secondAttribute="trailing" id="0pF-lc-ekj"/>
                             <constraint firstItem="Hik-1M-tfl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0vb-A4-Thk"/>
                             <constraint firstItem="JGK-6D-EJZ" firstAttribute="top" secondItem="x2P-MD-GRP" secondAttribute="bottom" constant="25" id="3Bz-x6-b7H"/>
                             <constraint firstItem="S04-ux-HY8" firstAttribute="leading" secondItem="JGK-6D-EJZ" secondAttribute="leading" id="3R6-74-tB9"/>
@@ -84,10 +110,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x2P-MD-GRP" secondAttribute="trailing" constant="80" id="N70-nk-cZV"/>
                             <constraint firstItem="YGs-hr-eRE" firstAttribute="trailing" secondItem="S04-ux-HY8" secondAttribute="trailing" id="QGY-AW-nEi"/>
                             <constraint firstItem="JSz-ev-DBK" firstAttribute="leading" secondItem="JGK-6D-EJZ" secondAttribute="leading" id="TtX-uF-Bzs"/>
+                            <constraint firstItem="GxF-4L-qsF" firstAttribute="leading" secondItem="u2L-B2-FU0" secondAttribute="leading" id="XfL-7s-Jel"/>
                             <constraint firstItem="Hik-1M-tfl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="Ydw-RB-Qbj"/>
+                            <constraint firstItem="GxF-4L-qsF" firstAttribute="trailing" secondItem="u2L-B2-FU0" secondAttribute="trailing" id="aWX-gj-N8T"/>
                             <constraint firstItem="JGK-6D-EJZ" firstAttribute="trailing" secondItem="x2P-MD-GRP" secondAttribute="trailing" id="cMS-jW-3qm"/>
                             <constraint firstItem="u2L-B2-FU0" firstAttribute="trailing" secondItem="JSz-ev-DBK" secondAttribute="trailing" id="co0-iU-BLC"/>
+                            <constraint firstItem="is6-lf-Lhg" firstAttribute="leading" secondItem="GxF-4L-qsF" secondAttribute="leading" id="gpm-tj-HHg"/>
                             <constraint firstItem="YGs-hr-eRE" firstAttribute="leading" secondItem="S04-ux-HY8" secondAttribute="leading" id="hQl-7u-AQu"/>
+                            <constraint firstItem="is6-lf-Lhg" firstAttribute="top" secondItem="GxF-4L-qsF" secondAttribute="bottom" constant="25" id="nwx-3z-1lt"/>
                             <constraint firstItem="x2P-MD-GRP" firstAttribute="top" secondItem="Hik-1M-tfl" secondAttribute="bottom" constant="50" id="pCv-Li-tdy"/>
                             <constraint firstItem="S04-ux-HY8" firstAttribute="top" secondItem="JGK-6D-EJZ" secondAttribute="bottom" constant="25" id="vZ4-Ht-3DU"/>
                             <constraint firstItem="YGs-hr-eRE" firstAttribute="top" secondItem="S04-ux-HY8" secondAttribute="bottom" constant="25" id="xIg-bn-T7h"/>
@@ -96,13 +126,14 @@
                     <navigationItem key="navigationItem" id="9lO-E1-7EW"/>
                     <connections>
                         <outlet property="tfAge" destination="JGK-6D-EJZ" id="flH-m8-mPC"/>
+                        <outlet property="tfCompany" destination="YGs-hr-eRE" id="qQj-yI-Jo4"/>
                         <outlet property="tfJob" destination="S04-ux-HY8" id="fzW-wT-83k"/>
                         <outlet property="tfName" destination="x2P-MD-GRP" id="KJY-hN-KxA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054.1984732824426" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
         </scene>
         <!--Screen2-->
         <scene sceneID="JHf-AM-5ac">
@@ -174,6 +205,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -182,6 +216,9 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

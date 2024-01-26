@@ -11,5 +11,5 @@ struct Person {
     var name = ""
     var age = ""
     var job = ""
-
+    var company = ""
 }

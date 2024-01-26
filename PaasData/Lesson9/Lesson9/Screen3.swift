@@ -26,4 +26,6 @@ class Screen3: UIViewController {
             lbAge.text = "I'm \(person.age) years old"
             lbJob.text = "I'm \(person.job)"
     }
+    
+    
 }

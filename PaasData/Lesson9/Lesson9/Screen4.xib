@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Screen4" customModule="Lesson9" customModuleProvider="target">
             <connections>
+                <outlet property="lbAge" destination="hHl-8l-HGc" id="2fZ-tO-q2T"/>
+                <outlet property="lbCompany" destination="o9F-Kn-Ue3" id="YlS-Nn-E9D"/>
+                <outlet property="lbJob" destination="OLR-a7-s0C" id="Kge-YG-dKR"/>
+                <outlet property="lbName" destination="ihT-5T-CKi" id="HjC-ax-kZ7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
