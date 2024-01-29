@@ -16,6 +16,9 @@
 		E358C8E52B674FB600FDECE5 /* PassDataExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C8E42B674FB600FDECE5 /* PassDataExTests.swift */; };
 		E358C8EF2B674FB600FDECE5 /* PassDataExUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C8EE2B674FB600FDECE5 /* PassDataExUITests.swift */; };
 		E358C8F12B674FB600FDECE5 /* PassDataExUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C8F02B674FB600FDECE5 /* PassDataExUITestsLaunchTests.swift */; };
+		E358C9052B675BD600FDECE5 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C9032B675BD600FDECE5 /* RegisterVC.swift */; };
+		E358C9062B675BD600FDECE5 /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E358C9042B675BD600FDECE5 /* RegisterVC.xib */; };
+		E358C9082B678CD700FDECE5 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C9072B678CD700FDECE5 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E358C8EA2B674FB600FDECE5 /* PassDataExUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassDataExUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E358C8EE2B674FB600FDECE5 /* PassDataExUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataExUITests.swift; sourceTree = "<group>"; };
 		E358C8F02B674FB600FDECE5 /* PassDataExUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataExUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E358C9032B675BD600FDECE5 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		E358C9042B675BD600FDECE5 /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		E358C9072B678CD700FDECE5 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				E358C8CF2B674FB500FDECE5 /* SceneDelegate.swift */,
 				E358C8D12B674FB500FDECE5 /* ViewController.swift */,
 				E358C8D32B674FB500FDECE5 /* Main.storyboard */,
+				E358C9032B675BD600FDECE5 /* RegisterVC.swift */,
+				E358C9042B675BD600FDECE5 /* RegisterVC.xib */,
+				E358C9072B678CD700FDECE5 /* Data.swift */,
 				E358C8D62B674FB600FDECE5 /* Assets.xcassets */,
 				E358C8D82B674FB600FDECE5 /* LaunchScreen.storyboard */,
 				E358C8DB2B674FB600FDECE5 /* Info.plist */,
@@ -232,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E358C8DA2B674FB600FDECE5 /* LaunchScreen.storyboard in Resources */,
+				E358C9062B675BD600FDECE5 /* RegisterVC.xib in Resources */,
 				E358C8D72B674FB600FDECE5 /* Assets.xcassets in Resources */,
 				E358C8D52B674FB500FDECE5 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E358C8D22B674FB500FDECE5 /* ViewController.swift in Sources */,
+				E358C9082B678CD700FDECE5 /* Data.swift in Sources */,
+				E358C9052B675BD600FDECE5 /* RegisterVC.swift in Sources */,
 				E358C8CE2B674FB500FDECE5 /* AppDelegate.swift in Sources */,
 				E358C8D02B674FB500FDECE5 /* SceneDelegate.swift in Sources */,
 			);
