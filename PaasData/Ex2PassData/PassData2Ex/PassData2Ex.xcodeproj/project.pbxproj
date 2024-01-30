@@ -16,6 +16,9 @@
 		E358C92D2B6791C300FDECE5 /* PassData2ExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C92C2B6791C300FDECE5 /* PassData2ExTests.swift */; };
 		E358C9372B6791C300FDECE5 /* PassData2ExUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C9362B6791C300FDECE5 /* PassData2ExUITests.swift */; };
 		E358C9392B6791C300FDECE5 /* PassData2ExUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C9382B6791C300FDECE5 /* PassData2ExUITestsLaunchTests.swift */; };
+		E358C94D2B6797B400FDECE5 /* NewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C94B2B6797B400FDECE5 /* NewCell.swift */; };
+		E358C94E2B6797B400FDECE5 /* NewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E358C94C2B6797B400FDECE5 /* NewCell.xib */; };
+		E358C9502B679ECF00FDECE5 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C94F2B679ECF00FDECE5 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E358C9322B6791C300FDECE5 /* PassData2ExUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassData2ExUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E358C9362B6791C300FDECE5 /* PassData2ExUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassData2ExUITests.swift; sourceTree = "<group>"; };
 		E358C9382B6791C300FDECE5 /* PassData2ExUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassData2ExUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E358C94B2B6797B400FDECE5 /* NewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCell.swift; sourceTree = "<group>"; };
+		E358C94C2B6797B400FDECE5 /* NewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCell.xib; sourceTree = "<group>"; };
+		E358C94F2B679ECF00FDECE5 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				E358C9142B6791C300FDECE5 /* PassData2Ex */,
-				E358C92B2B6791C300FDECE5 /* PassData2ExTests */,
 				E358C9352B6791C300FDECE5 /* PassData2ExUITests */,
 				E358C9132B6791C300FDECE5 /* Products */,
 			);
@@ -103,9 +108,13 @@
 				E358C9172B6791C300FDECE5 /* SceneDelegate.swift */,
 				E358C9192B6791C300FDECE5 /* ViewController.swift */,
 				E358C91B2B6791C300FDECE5 /* Main.storyboard */,
+				E358C94B2B6797B400FDECE5 /* NewCell.swift */,
+				E358C94C2B6797B400FDECE5 /* NewCell.xib */,
+				E358C94F2B679ECF00FDECE5 /* Data.swift */,
 				E358C91E2B6791C300FDECE5 /* Assets.xcassets */,
 				E358C9202B6791C300FDECE5 /* LaunchScreen.storyboard */,
 				E358C9232B6791C300FDECE5 /* Info.plist */,
+				E358C92B2B6791C300FDECE5 /* PassData2ExTests */,
 			);
 			path = PassData2Ex;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 			files = (
 				E358C9222B6791C300FDECE5 /* LaunchScreen.storyboard in Resources */,
 				E358C91F2B6791C300FDECE5 /* Assets.xcassets in Resources */,
+				E358C94E2B6797B400FDECE5 /* NewCell.xib in Resources */,
 				E358C91D2B6791C300FDECE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E358C91A2B6791C300FDECE5 /* ViewController.swift in Sources */,
+				E358C9502B679ECF00FDECE5 /* Data.swift in Sources */,
 				E358C9162B6791C300FDECE5 /* AppDelegate.swift in Sources */,
+				E358C94D2B6797B400FDECE5 /* NewCell.swift in Sources */,
 				E358C9182B6791C300FDECE5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
