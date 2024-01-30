@@ -19,6 +19,10 @@
 		E358C94D2B6797B400FDECE5 /* NewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C94B2B6797B400FDECE5 /* NewCell.swift */; };
 		E358C94E2B6797B400FDECE5 /* NewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E358C94C2B6797B400FDECE5 /* NewCell.xib */; };
 		E358C9502B679ECF00FDECE5 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E358C94F2B679ECF00FDECE5 /* Data.swift */; };
+		E3E3E1622B68D9530028F78E /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E3E1602B68D9530028F78E /* SecondVC.swift */; };
+		E3E3E1632B68D9530028F78E /* SecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E3E1612B68D9530028F78E /* SecondVC.xib */; };
+		E3E3E1662B68E6520028F78E /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E3E1642B68E6520028F78E /* ThirdVC.swift */; };
+		E3E3E1672B68E6520028F78E /* ThirdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E3E1652B68E6520028F78E /* ThirdVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		E358C94B2B6797B400FDECE5 /* NewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCell.swift; sourceTree = "<group>"; };
 		E358C94C2B6797B400FDECE5 /* NewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCell.xib; sourceTree = "<group>"; };
 		E358C94F2B679ECF00FDECE5 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		E3E3E1602B68D9530028F78E /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		E3E3E1612B68D9530028F78E /* SecondVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondVC.xib; sourceTree = "<group>"; };
+		E3E3E1642B68E6520028F78E /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		E3E3E1652B68E6520028F78E /* ThirdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,10 @@
 				E358C91B2B6791C300FDECE5 /* Main.storyboard */,
 				E358C94B2B6797B400FDECE5 /* NewCell.swift */,
 				E358C94C2B6797B400FDECE5 /* NewCell.xib */,
+				E3E3E1602B68D9530028F78E /* SecondVC.swift */,
+				E3E3E1612B68D9530028F78E /* SecondVC.xib */,
+				E3E3E1642B68E6520028F78E /* ThirdVC.swift */,
+				E3E3E1652B68E6520028F78E /* ThirdVC.xib */,
 				E358C94F2B679ECF00FDECE5 /* Data.swift */,
 				E358C91E2B6791C300FDECE5 /* Assets.xcassets */,
 				E358C9202B6791C300FDECE5 /* LaunchScreen.storyboard */,
@@ -240,9 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E3E1632B68D9530028F78E /* SecondVC.xib in Resources */,
 				E358C9222B6791C300FDECE5 /* LaunchScreen.storyboard in Resources */,
 				E358C91F2B6791C300FDECE5 /* Assets.xcassets in Resources */,
 				E358C94E2B6797B400FDECE5 /* NewCell.xib in Resources */,
+				E3E3E1672B68E6520028F78E /* ThirdVC.xib in Resources */,
 				E358C91D2B6791C300FDECE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +285,9 @@
 				E358C91A2B6791C300FDECE5 /* ViewController.swift in Sources */,
 				E358C9502B679ECF00FDECE5 /* Data.swift in Sources */,
 				E358C9162B6791C300FDECE5 /* AppDelegate.swift in Sources */,
+				E3E3E1662B68E6520028F78E /* ThirdVC.swift in Sources */,
 				E358C94D2B6797B400FDECE5 /* NewCell.swift in Sources */,
+				E3E3E1622B68D9530028F78E /* SecondVC.swift in Sources */,
 				E358C9182B6791C300FDECE5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

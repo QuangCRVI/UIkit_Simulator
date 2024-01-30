@@ -49,23 +49,35 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         
         let nib = UINib(nibName: "NewCell", bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: "NewCell")
+        collectionView.register(nib, forCellWithReuseIdentifier: "newCell")
     }
 
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arr.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewCell", for: indexPath) as! NewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newCell", for: indexPath) as! NewCell
         let news = arr[indexPath.row]
         cell.lbTitle.text = news.title
         cell.imgNew.image = UIImage(named: news.image)
         cell.lbDescrible.text = news.describe
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let w = view.frame.width
+        return CGSize(width: w, height: 500)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        var vc = SecondVC(nibName: "SecondVC", bundle: nil)
+        let data = arr[indexPath.row]
+        vc.name = data
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }
