@@ -11,4 +11,5 @@ struct MenuNew {
     var title = ""
     var image = ""
     var describe = ""
+    var line = ""
 }

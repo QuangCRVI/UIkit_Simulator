@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdVC" customModule="PassData2Ex" customModuleProvider="target">
             <connections>
+                <outlet property="imgNew" destination="Wfa-R1-aYE" id="igq-Sh-BZU"/>
+                <outlet property="lbLine" destination="aBk-QO-L2a" id="FSE-LO-4Py"/>
+                <outlet property="lbTitle3" destination="4tt-r8-OLG" id="7fX-qF-DYY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -32,9 +35,15 @@
                         <constraint firstAttribute="width" secondItem="Wfa-R1-aYE" secondAttribute="height" multiplier="21:11" id="yrn-Sn-rth"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tt-r8-OLG">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tt-r8-OLG">
                     <rect key="frame" x="29.333333333333343" y="334" width="334.33333333333326" height="23"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBk-QO-L2a">
+                    <rect key="frame" x="29.333333333333343" y="382" width="334.33333333333326" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -43,10 +52,13 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="cXY-8a-LVD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="6YP-mb-hUo"/>
+                <constraint firstItem="aBk-QO-L2a" firstAttribute="top" secondItem="4tt-r8-OLG" secondAttribute="bottom" constant="25" id="76E-1a-YFE"/>
                 <constraint firstItem="4tt-r8-OLG" firstAttribute="leading" secondItem="Wfa-R1-aYE" secondAttribute="leading" id="7oV-ZP-fLK"/>
                 <constraint firstItem="cXY-8a-LVD" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.2" id="97H-e9-nC2"/>
                 <constraint firstItem="4tt-r8-OLG" firstAttribute="trailing" secondItem="Wfa-R1-aYE" secondAttribute="trailing" id="ArD-a9-W1A"/>
+                <constraint firstItem="aBk-QO-L2a" firstAttribute="leading" secondItem="4tt-r8-OLG" secondAttribute="leading" id="EzG-aE-fZW"/>
                 <constraint firstItem="Wfa-R1-aYE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="SO6-Ub-FsP"/>
+                <constraint firstItem="aBk-QO-L2a" firstAttribute="trailing" secondItem="4tt-r8-OLG" secondAttribute="trailing" id="Yap-sq-KMS"/>
                 <constraint firstItem="4tt-r8-OLG" firstAttribute="top" secondItem="Wfa-R1-aYE" secondAttribute="bottom" constant="25" id="dw8-dc-RYk"/>
                 <constraint firstItem="Wfa-R1-aYE" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.85" id="ioz-WM-rKW"/>
                 <constraint firstItem="Wfa-R1-aYE" firstAttribute="top" secondItem="cXY-8a-LVD" secondAttribute="bottom" constant="40" id="lw4-vZ-Wro"/>
