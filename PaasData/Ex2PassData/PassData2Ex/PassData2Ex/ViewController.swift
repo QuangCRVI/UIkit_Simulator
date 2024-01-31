@@ -9,21 +9,26 @@ import UIKit
 
 var arr = [MenuNew]()
 
+
 class ViewController: UIViewController {
     
+    var counter = 0
+    var timer = Timer()
+   
+    @IBOutlet weak var pageView: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupCollectionView()
         fakeData()
+        setupPageView()
     }
     
     func fakeData() {
         let data = MenuNew(title: "Hậu vệ Indonesia: 'Chúng tôi cố gắng thắng Việt Nam lần nữa'", image: "img1", describe: "Cầu thủ nhập tịch Sandy Walsh khẳng định thành tích ở Asian Cup 2023 tiếp thêm tự tin cho Indonesia.", line: "Tại vòng bảng Asian Cup 2023, Indonesia đánh bại Việt Nam 1-0 ở lượt trận hai, bằng bàn thắng duy nhất trên chấm phạt đền của Asnawi Mangkualam. Đây là chiến thắng đầu tiên của Indonesia trước Việt Nam kể từ AFF Cup 2016, đồng thời giúp họ vượt qua vòng bảng với tư cách một trong bốn đội thứ ba thành tích tốt nhất.\nỞ vòng loại hai World Cup 2026 sắp tới, Indoensia sẽ tái ngộ Việt Nam, khi đá trên sân nhà vào ngày 21/3 và sân khách ngày 26/3. Hiện, Indonesia đang đứng cuối bảng F với một điểm, bằng Philippines nhưng kém hiệu số bàn thắng bại, đồng thời kém Việt Nam hai điểm và Iraq năm điểm. Vì vậy, hai trận sắp tới được xem là quyết định tới tấm vé đi tiếp của hai đội bóng hàng đầu Đông Nam Á.")
         
         let data1 = MenuNew(title: "HLV Shin: 'Indonesia hay nhưng kém may'", image: "img2", describe: "Sau khi thua Australia 0-4 ở vòng 1/8 Asian Cup 2023, HLV Shin Tae-yong cho rằng Indonesia kém may mắn, đặc biệt trong bàn thua đầu.", line: "Nếu tự đánh giá, tôi chọn đây là trận hay nhất từ đầu giải của Indonesia, Shin Tae-yong nói ở họp báo sau trận đấu hôm qua 28/1. Nhưng đội kém may khi bàn thua đầu tiên đến từ pha phản lưới.\nPhút 12, Australia căng ngang từ cánh phải đưa bóng đập chân Elkan Baggott, rồi bay vào góc gần khiến thủ môn Ernando Ari bó tay. HLV Shin cho rằng nếu không có bàn thua này thì diễn biến trận đấu đã khác. Ông khẳng định các cầu thủ Indonesia không thua kém đối thủ về phong độ và đã làm tốt chỉ dẫn của ban huấn luyện.\nChúng tôi thua vì kinh nghiệm và sự tập trung, Shin cho hay. Australia rõ ràng làm tốt hơn ở một số pha bóng. Chúng tôi có lẽ sẽ tạo được sự khác biệt ở lần tái đấu tới.")
-        
         
         let data2 = MenuNew(title: "Chủ tịch Barca chấp nhận đề xuất của Xavi", image: "img3", describe: "Chủ tịch Barca, Joan Laporta chấp nhận đề xuất làm việc đến hết mùa rồi ra đi của HLV Xavi.", line: "Xavi đã thông báo với tôi rằng cậu ấy sẽ ra đi vào cuối mùa giải, Laporta nói với tờ Mundo Deportivo hôm 28/1. Cậu ấy muốn kết thúc mùa giải và đó là công thức mà tôi chấp nhận vì chính Xavi là người đề xuất điều đó với tôi. Cậu ấy là một huyền thoại của Barca, một người trung thực, hành động với phẩm giá hoàn toàn, và là một người yêu quý Barca.\nHôm 27/1, sau trận Barca thua Villarreal 3-5 ở vòng 22 La Liga, Xavi tuyên bố không muốn trở thành vấn đề của đội bóng và sẽ ra đi vào cuối mùa. Laporta không có mặt trong buổi họp báo cùng HLV.")
         
@@ -61,7 +66,30 @@ class ViewController: UIViewController {
         let nib = UINib(nibName: "NewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "newCell")
     }
-
+    
+    func setupPageView() {
+        pageView.currentPage = 0
+        pageView.numberOfPages = arr.count
+        DispatchQueue.main.async { [self] in
+            self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
+        }
+    }
+    
+    @objc func changeImage() {
+        if counter < arr.count {
+            let index = IndexPath.init(item: counter, section: 0)
+            self.collectionView.selectItem(at: index, animated: true, scrollPosition: .centeredHorizontally)
+            //self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+            pageView.currentPage = counter
+            counter += 1
+        } else {
+            counter = 0
+            let index = IndexPath.init(item: counter, section: 0)
+            self.collectionView.selectItem(at: index, animated: true, scrollPosition: .centeredHorizontally)
+            //self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+            pageView.currentPage = counter
+        }
+    }
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
