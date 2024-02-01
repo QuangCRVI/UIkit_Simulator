@@ -1,0 +1,57 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98810951796d112b754e8d560b51957d79"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98d6b7eea6aa17430d5bfc5a9c009dc6e7"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9821dc2d070b42acc100d6030597d85f8c"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e985ef5e14bbf08ac39e067467a5ca5c81a"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98a52e5abb23b9e8bf366c04582aae8ca0"
+    }
+  ],
+  "containerPath" : "/Users/quangnguyen/UIkit_Simulator/Importing Swift Libraries/Lesson12/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/quangnguyen/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/quangnguyen/Library/Developer/Xcode/DerivedData/Pods-cjcumedydxrlenbwlhzzgaqitigi/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/quangnguyen/Library/Developer/Xcode/DerivedData/Pods-cjcumedydxrlenbwlhzzgaqitigi/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}

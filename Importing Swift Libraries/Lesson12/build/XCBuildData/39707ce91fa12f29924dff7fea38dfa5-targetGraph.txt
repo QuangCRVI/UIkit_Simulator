@@ -1,0 +1,10 @@
+Target dependency graph (5 targets)
+IQKeyboardManager-IQKeyboardManager in Pods, no dependencies
+IQKeyboardManager in Pods, depends on:
+IQKeyboardManager-IQKeyboardManager in Pods (explicit)
+Pods-Lesson12 in Pods, depends on:
+IQKeyboardManager in Pods (explicit)
+Pods-Lesson12-Lesson12UITests in Pods, depends on:
+IQKeyboardManager in Pods (explicit)
+Pods-Lesson12Tests in Pods, depends on:
+Pods-Lesson12 in Pods (explicit)
