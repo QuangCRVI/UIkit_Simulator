@@ -30,6 +30,9 @@
                                 <rect key="frame" x="163.66666666666666" y="768" width="65.666666666666657" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <action selector="tapOnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zxp-e9-Zh8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -45,6 +48,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ntg-8n-i1I" secondAttribute="bottom" constant="15" id="nTi-tt-AOZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tfName" destination="zVM-K1-n7i" id="qIP-Jh-ITX"/>
+                        <outlet property="tfPass" destination="zVM-K1-n7i" id="xik-17-AkC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

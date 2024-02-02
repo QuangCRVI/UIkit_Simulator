@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tfName: UITextField!
+    @IBOutlet weak var tfPass: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -18,5 +21,14 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
 
+    @IBAction func tapOnLogin(_ sender: Any) {
+        view.endEditing(true)
+
+        if tfName.text == "" {
+            // basic usage
+            // self.view.makeToast("")
+            return
+        }
+    }
 }
 

@@ -4,7 +4,7 @@ PODS:
 
 DEPENDENCIES:
   - IQKeyboardManager
-  - Toast-Swift
+  - Toast-Swift (~> 5.1.0)
 
 SPEC REPOS:
   trunk:
@@ -15,6 +15,6 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 904d013844bbae0abe073f015487bfebe5476335
   Toast-Swift: dd369e68ee529f542c65bd0d0c6c50cd743cf6f2
 
-PODFILE CHECKSUM: c795168489cb21c59fb8dc02a427e7c9ac7ff4cf
+PODFILE CHECKSUM: 8c5568653f36a6712f2ed6a28142b7afc7ceb791
 
 COCOAPODS: 1.15.0
